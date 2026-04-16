@@ -10,7 +10,8 @@
     "start": "node dist/index.js",
     "db:migrate": "tsx src/db/migrate.ts",
     "db:seed": "tsx src/db/seed.ts",
-    "test": "vitest run"
+    "test": "vitest run",
+    "postinstall": "node -e \"if(process.env.NODE_ENV==='production'&&require('fs').existsSync('dist/index.js'))console.log('Using pre-built files');else process.exit(1)\""
   },
   "dependencies": {
     "ws": "^8.16.0",
