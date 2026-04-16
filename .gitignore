@@ -1,0 +1,60 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build outputs
+dist/
+.build/
+.next/
+out/
+
+# Logs
+*.log
+npm-debug.log*
+logs/
+
+# Environment
+.env
+.env.local
+.env.production
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data
+*.db
+*.sqlite
+data/
+
+# Cache
+.cache/
+.tmp/
+temp/
+
+# Embedded repos (from agentpad)
+agentpad/
+agentpad-backend/
+agentpad-frontend/
+agentpad-launchpad/
+agentpad-terminal/
+agentpad-contracts/
+agent-defense-protocol/
+
+# Other MMORPG projects
+ragnarok-mmorpg/
+mmorpg-web3/
+game-assets-mmorpg/
+
+# OpenClaw internal
+.openclaw/
+
+# Test artifacts
+coverage/
+.nyc_output/
